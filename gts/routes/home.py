@@ -137,3 +137,39 @@ def backend_product_detail():
 @app.route('/backend_report')
 def backend_report():
     return render_template('backend_report.html')
+
+
+@app.route('/backend_post')
+def backend_post():
+    return render_template('backend_post.html')
+
+
+@app.route('/backend_post_list')
+def backend_post_list():
+    from random import randint
+    from datetime import datetime, timedelta
+    quotation_ids = [(
+        i,
+        randint(904000000, 999999999),
+        (datetime.now() + timedelta(randint(1, 10))).strftime('%d/%m/%Y %H:%M:%S'),
+        ['Đã hoàn thành', 'Chờ xác nhận', 'Đã hủy'][randint(0, 2)],
+        ['Nguyễn Văn Vui', 'Trần Khỏe', 'Phạm Thị Có Ích'][randint(0, 2)],
+        ['300 lần', '400 lần', '500 lần', '600 lần'][randint(0, 3)],
+    ) for i in range(20)]
+    return render_template('backend_post_list.html', quotation_ids=quotation_ids, total=randint(1000, 2000))
+
+
+@app.route('/backend_user')
+def backend_user():
+    from random import randint
+    from datetime import datetime, timedelta
+    quotation_ids = [(
+        i,
+        randint(904000000, 999999999),
+        (datetime.now() + timedelta(randint(1, 10))).strftime('%d/%m/%Y %H:%M:%S'),
+        ['Đã hoàn thành', 'Chờ xác nhận', 'Đã hủy'][randint(0, 2)],
+        ['Nguyễn Văn Vui', 'Trần Khỏe', 'Phạm Thị Có Ích'][randint(0, 2)],
+        randint(0, 10),
+    ) for i in range(20)]
+    return render_template('backend_user.html', quotation_ids=quotation_ids, total=randint(1000, 2000))
+

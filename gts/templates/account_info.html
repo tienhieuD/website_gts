@@ -12,7 +12,13 @@
 </head>
 
 <body>
+{% if not request.args.get('backend') %}
 {% include 'header.html' %}
+{% endif %}
+
+{% if request.args.get('backend') %}
+{% include 'backend_header.html' %}
+{% endif %}
 
 <main>
     <div class="container">
@@ -26,6 +32,14 @@
 
             <div class="account">
                 <h2>Thông tin tài khoản</h2>
+
+                {% if request.args.get('backend') %}
+                <div class="text-right">
+                    <button class="btn">Xác nhận tài khoản</button>
+                    <button class="btn btn-reverse">Khóa tài khoản</button>
+                    <button class="btn btn-reverse">Xóa người dùng</button>
+                </div>
+                {% endif %}
 
                 <div class="user_info">
                     <div class="img">

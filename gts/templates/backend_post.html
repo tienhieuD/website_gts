@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/account_info.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+{% include 'backend_header.html' %}
+
+<main>
+    <div class="container">
+        <ul class="cc-breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><b href="#">Đăng tin tức / blog</b></li>
+        </ul>
+    </div>
+    <div class="em_account_info">
+        <div class="container">
+
+            <div class="account em_address_book nomagrin-nopadding-sm">
+                <h2>Nội dung bài viết</h2>
+
+
+                <div class="edit_form nopadding-nobackground">
+                    <form style="max-width:100%">
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Tiêu đề</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="name" placeholder="vd: Tăng giá thuốc tại các chợ đầu mối" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Ngày công khai</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="dateofbird" placeholder="vd: 31/12/1982" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Chọn danh mục*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select>
+                                    <option>Sản phẩm mới</option>
+                                    <option>Tin tức</option>
+                                    <option>Khuyến mại</option>
+                                    <option>Thông tin hỗ trợ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Nội dung bài viết</label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea style="width: 100%;
+                                    height: 600px;
+                                    border-radius: 4px;
+                                    background-color: #FFF;
+                                    display: inline-block;
+                                    border: solid 1px #dfe1e6;
+                                    overflow: hidden;
+                                    padding: 10px;">
+Khởi đầu từ 1 quầy thuốc nhỏ mang tên 435 tại chợ thuốc Hapu chỉ với 2 nhân viên. Sau hơn 5 năm hoạt động và phát triển, cùng với đội ngũ dược sĩ và nhân viên giàu kinh nghiệm, yêu nghề. Hiện nay Công ty CPTM Dược Vương là 1 trong những công ty cung cấp thuốc uy tín nhất tại khu vực miền Bắc nói chung và thủ đô Hà Nội nói riêng. Giá Thuốc Hapu là website chính thức của Công ty, được chúng tôi xây dựng và đưa vào hoạt động từ tháng 6/2015, với mục đích cập nhật một cách nhanh chóng và chính xác về số lượng, chủng loại thuốc và diễn biến giá trên chợ thuốc Hapu để khách hàng có thể lên dự trù nhanh chóng và chính xác nhất. Sau hơn 2 năm hoạt động, nhận được sự ủng hộ và góp ý tích cực từ phía khách hàng, giathuochapu.com đã không ngừng nâng cấp về giao diện và tính năng, trở thành website bán buôn dược phẩm online đầu tiên tại Việt Nam, góp phần làm giảm tối đa chi phí và thời gian dự trù cho khách hàng.Với hơn 6500 sản phẩm được cập nhật đầy đủ thông tin và báo giá trên website, Công ty Cổ phần thương mại Dược Vương cung cấp hầu như toàn bộ các mặt hàng thuốc, thực phẩm chức năng và thiết bị y tế thông dụng trên thị trường. Với những tính năng ưu việt được thiết kế dành riêng cho khách hàng là nhà thuốc, quầy thuốc, đặt mua dược phẩm online trên giathuochapu.com, bạn không những được nhận sự hỗ trợ nhiệt tình từ nhân viên chăm sóc khách hàng mà còn tiết kiệm tối đa thời gian, chi phí hơn khi mua hàng trực tiếp tại quầy.Tầm nhìn, sứ mệnh, giá trị cốt lõi và phương châm hành động của Công ty CPTM Dược Vương.
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8">
+                                <div class="swap">
+                                    <div class="col">
+                                        <button aria-expanded="false"
+                                                class="btn btn-reverse" data-target="#id_duy_nhat1"
+                                                data-toggle="collapse" type="button">Hủy bỏ
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn">Đăng tin ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% include 'footer.html' %}
+</body>
+
+</html>

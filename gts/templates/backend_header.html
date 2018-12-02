@@ -92,7 +92,7 @@
             <div class="container">
                 <ul>
                     <li class="x_active"><a href="/trang-chu">Trang chủ</a></li>
-                    <li><a href="/lien-he">Đăng tin tức</a></li>
+                    <li><a href="/backend_post_list">Đăng tin tức</a></li>
                     <li class="em_drop">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="order">
                             Quản lý Đơn hàng
@@ -104,7 +104,15 @@
                     </li>
                     <li><a href="/backend_report">Thống kê</a></li>
                     <li><a href="/backend_product">Quản lý Sản phẩm</a></li>
-                    <li><a href="/backend_user">Quản lý Tài khoản</a></li>
+                    <li class="em_drop">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user">
+                            Quản lý tài khoản
+                        </a>
+                        <div aria-labelledby="order" class="dropdown-menu em_dropdown_menu" style="left:-10%">
+                            <a class="dropdown-item" href="/backend_user">Đang chờ kích hoạt</a>
+                            <a class="dropdown-item" href="/backend_user">Tất cả người dùng</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
