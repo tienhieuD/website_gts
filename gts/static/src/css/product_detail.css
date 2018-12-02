@@ -1,0 +1,172 @@
+.btn {
+  border: 1px solid #0087ff;
+  border-radius: 4px;
+  background-color: #0087ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .2s;
+}
+.btn-reverse {
+  border: 1px solid #0087ff;
+  border-radius: 4px;
+  background-color: #0087ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .2s;
+  background-color: white;
+  color: #0087ff;
+}
+#product_image_zoom {
+  object-fit: contain !important;
+  width: 280px;
+  height: 280px;
+}
+@media only screen and (max-width : 768px) {
+  #product_image_zoom {
+    width: 100%;
+    margin-left: -16px;
+  }
+}
+.zoomLens {
+  display: none !important;
+}
+.zoomWindow {
+  border-color: #FFF !important;
+  border-width: 8px !important   ;
+  border-top: none !important;
+}
+@media only screen and (max-width : 768px) {
+  .em_product_containner {
+    margin-top: 12px;
+  }
+}
+.em_product_containner hr {
+  margin: 56px 0 36px;
+}
+.em_product_containner .em_detail_of_product {
+  padding: 0px 20px;
+}
+@media only screen and (max-width : 768px) {
+  .em_product_containner .em_detail_of_product {
+    padding: 0px;
+  }
+}
+.em_product_containner .em_detail_of_product h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width : 768px) {
+  .em_product_containner .em_detail_of_product h1 {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+}
+.em_product_containner .em_detail_of_product .ptable td {
+  padding: 12px 0;
+}
+.em_product_containner .em_detail_of_product .ptable td:nth-child(1) {
+  min-width: 100px;
+}
+.em_product_containner .em_detail_of_product .ptable .price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0.83;
+  color: #ed1818;
+}
+.em_product_containner .em_detail_of_product .ptable .btn_view_price {
+  color: #ed1818;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.em_product_containner .em_detail_of_product .ptable .amount {
+  font-size: 0;
+  width: 110px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #FFF;
+  display: inline-block;
+  border: solid 1px #dfe1e6;
+  overflow: hidden;
+}
+.em_product_containner .em_detail_of_product .ptable .amount button,
+.em_product_containner .em_detail_of_product .ptable .amount input {
+  width: 33.333333%;
+  font-size: 15px;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: #666;
+  background-color: #fff;
+  text-align: center;
+}
+.em_product_containner .em_detail_of_product .ptable .amount button::-webkit-inner-spin-button,
+.em_product_containner .em_detail_of_product .ptable .amount input::-webkit-inner-spin-button,
+.em_product_containner .em_detail_of_product .ptable .amount button::-webkit-outer-spin-button,
+.em_product_containner .em_detail_of_product .ptable .amount input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.em_product_containner .em_detail_of_product .ptable .amount button:active,
+.em_product_containner .em_detail_of_product .ptable .amount input:active {
+  color: #666;
+  background-color: rgba(153, 151, 153, 0.18);
+}
+.em_product_containner .em_detail_of_product .note {
+  padding: 7px 0;
+  border-radius: 4px;
+}
+.em_product_containner .em_detail_of_product .note .note_item {
+  margin-right: 12px;
+  display: inline-block;
+}
+.em_product_containner .em_detail_of_product .note .verify {
+  background: transparent url(../img/em/home/checked.png) no-repeat center left;
+  background-size: contain;
+  padding-left: 24px;
+}
+.em_product_containner .em_detail_of_product .btn_add {
+  height: 54px;
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 0 19px;
+}
+.em_product_containner .em_detail_info .pdetail_table td {
+  vertical-align: top;
+  min-width: 150px;
+  padding: 16px 0;
+}
+.em_product_containner .em_detail_info .pdetail_table td:nth-child(1) {
+  font-weight: bold;
+}
+.em_product_containner .em_rel_table .rel_product_table {
+  font-size: 13px;
+}
+.em_product_containner .em_rel_table .rel_product_table td {
+  vertical-align: top;
+  padding-bottom: 12px;
+}
+.em_product_containner .em_rel_table .rel_product_table td:nth-child(2) {
+  padding-left: 12px;
+}
+.em_product_containner .em_rel_table .rel_product_table .rel_img {
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  border: solid 1px #dfe1e6;
+}
+.em_product_containner .em_rel_table .rel_product_table .cred {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.54;
+  color: #ed1818;
+  margin: 4px;
+}

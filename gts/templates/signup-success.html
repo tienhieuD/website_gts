@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Homepage by Entrust Developer" name="description"/>
+    <meta content="Entrust Developer" name="author"/>
+
+    <title>Đăng ký thành công</title>
+
+    <link href="/static/lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/lib/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <script src="/static/lib/jquery/jquery.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/affix.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/alert.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/button.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/carousel.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/collapse.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/dropdown.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/modal.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/popover.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/scrollspy.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/tab.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/tooltip.js" type="text/javascript"></script>
+    <script src="/static/lib/bootstrap/js/transition.js" type="text/javascript"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Main CSS -->
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/signup-success.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+{% include 'header.html' %}
+
+<main>
+    <div class="sigup-success" id="sigup-success">
+        <div class="container">
+            <ul class="cc-breadcrumb">
+                <li>Trang chủ</li>
+                <li>Đăng ký</li>
+            </ul>
+            <div class="row">
+                <div class="cc-main-sigupdone">
+                    <div class="cc-top-main">
+                        <img src="/static/src/img/Popup/group-4@3x.png"/>
+                        <span>Xin chúc mừng,<br/>
+                                tài khoản của bạn đã được khởi tạo thành công.</span>
+                    </div>
+                    <div class="cc-body-main row">
+                        <div class="col-md-6  col-xs-12">
+                            <span class="cc-title-input col-md-5 col-xs-12">Tên truy cập:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="text"
+                                   value="Misa Tran"/>
+
+                            <span class="cc-title-input col-md-5 col-xs-12">Mật khẩu:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="password"
+                                   value="asdasdasda"/>
+
+                            <span class="cc-title-input col-md-5 col-xs-12">Email:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="text"
+                                   value="MisaTran@gmail.com"/>
+
+                            <span class="cc-title-input col-md-5 col-xs-12">Điện thoại:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="text"
+                                   value="0964346221"/>
+                        </div>
+                        <div class="col-md-6  col-xs-12">
+                            <span class="cc-title-input col-md-5 col-xs-12">Tên KH:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="text"
+                                   value="Trần Linh"/>
+
+                            <span class="cc-title-input col-md-5 col-xs-12">Sinh nhật:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="text"
+                                   value="12/4/1990"/>
+
+                            <span class="cc-title-input col-md-5 col-xs-12">Tên Nhà thuốc:</span>
+                            <input class="cc-input-body col-md-7 col-xs-12" readonly="readonly" type="text"
+                                   value="Linh Trang"/>
+
+                            <span class="cc-title-input col-md-5 col-xs-12">Địa chỉ giao hàng:</span>
+                            <p class="cc-input-body col-md-7 col-xs-12">54 Tôn Đức Thắng, Đống Đa, Hà Nội</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Vì lý do bảo mật, chúng tôi đã để tài khoản của bạn ở trạng thái <span class="cc-text-bold">Chờ kích hoạt </span>.
+                            Chúng tôi sẽ gọi lại để xác nhận thông tin và kích hoạt tài khoản cho bạn <span
+                                    class="cc-text-bold">trong vòng 24 tiếng</span> . Rất xin lỗi bạn vì sự bất tiện
+                            này.</p>
+                        <br/>
+                        <p>Ngay từ bây giờ, bạn có thể tham gia <a>Cộng đồng thành viên Giá Thuốc Sỉ trên Facebook</a>
+                            để cập nhật nhanh nhất những thông tin về sản phẩm mới và những ưu đãi hấp dẫn đang được áp
+                            dụng.
+                            Mời bạn bấm vào <a>đây</a> để tham gia cùng chúng tôi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include 'footer.html' %}
+
+</body>
+
+</html>

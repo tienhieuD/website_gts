@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/order_detail.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/product_detail.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/home.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/cart.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom JS -->
+    <script src="/static/lib/elevatezoom/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
+    <script src="/static/src/js/order_detail.js" type="text/javascript"></script>
+    <script src="/static/src/js/product_detail.js" type="text/javascript"></script>
+    <!-- For cart -->
+    <style>
+        input[type=text], select, textarea {
+            width: 100%;
+            height: 36px;
+            border-radius: 4px;
+            background-color: #FFF;
+            display: inline-block;
+            border: solid 1px #dfe1e6;
+            overflow: hidden;
+            padding: 2px 6px;
+        }
+        textarea {
+            height: 108px;
+            min-width: 630px;
+        }
+    </style>
+    <style>button.sml { font-size: 9px; padding: 2px 6px;}</style>
+
+</head>
+
+<body>
+{% include 'backend_header.html' %}
+<main>
+    <div class="container">
+        <ul class="cc-breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li>Chi tiết sản phẩm</li>
+            <li>Omega 3 Oleo De Peixe 1000mg C/120 Cápsulas Takecare</li>
+        </ul>
+    </div>
+    <div class="em_order_containner em_product_containner">
+        <div class="container">
+            <div class="em_row">
+                <div class="em_col_800">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="prd_img_show">
+                                <img data-zoom-image="/static/src/img/daucahihi.jpg" id="product_image_zoom"
+                                     src="/static/src/img/daucahihi.jpg"/>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="em_detail_of_product">
+                                <table class="ptable">
+                                    <tr>
+                                        <td>Tên sản phẩm:</td>
+                                        <td>
+                                            <h1><input type="text" value="Omega 3 Oleo De Peixe 1000mg C/120 Cápsulas Takecare"/></h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hiện trên website:</td>
+                                        <td>
+                                            <input type="checkbox" checked="checked"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hình ảnh: </td>
+                                        <td><input type="file" name="image"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qui cách đóng gói:</td>
+                                        <td><select>
+                                            <option>Hộp 2 vỉ x 10 viên</option>
+                                            <option>Hộp 3 vỉ x 64 viên</option>
+                                            <option>Hộp 4 vỉ x 100 viên</option>
+                                        </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giá:</td>
+                                        <td>
+                                             <span class="price"><input type="text" value="550.000"/></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Số lượng</td>
+                                        <td><input type="text" value="920"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hạn sử dụng</td>
+                                        <td><input type="text" value="05/10/2020"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qui cách bán</td>
+                                        <td><input type="text" value="Bán theo cọc 10 lọ"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Điểm tích lũy</td>
+                                        <td><input type="text" value="10"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dạng trình bày:</td>
+                                        <td><input type="text" value="Hộp 5 vỉ x 10 viên"/></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="em_detail_info">
+                                <table class="pdetail_table">
+                                    <tr>
+                                        <td>Thành phần</td>
+                                        <td>
+<textarea>
+Alphachymotrypsin ………………………….. 4200 IU (21 Microkâtl)
+Tá dược ……………………………………………. Vừa đủ 1 viên nén
+(Tá dược bao gồm: Avicel, Erâpc, Povidon, magnesi stearate)
+</textarea>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Chú ý:</td>
+                                        <td>
+<textarea>
+Đọc kỹ hướng dẫn sử dụng trước khi dùng.
+Nếu cần thêm thông tin, xin hỏi ý kiến bác sĩ.
+Thuốc này chỉ dùng theo đơn của thầy thuốc
+</textarea>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <br/>
+
+                                <button class="btn btn_add">Cập nhật thông tin</button>
+                                <button class="btn btn-reverse">Lưu trữ sản phẩm</button>
+
+                            </div>
+
+                            <hr/>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="em_col_300">
+                    <div class="em_pay_detail em_rel_table">
+                        <div class="pay_block">
+                            <h3>Bình luận cần duyệt</h3>
+                            <hr/>
+                            <table class="rel_product_table">
+                                <tr>
+                                    <td>
+                                        <b class="cred">Trần Hiếu (3 giờ trước)</b>
+                                        <p>Sản phẩm rất oke, tôi uống khỏi bệnh nhanh. Cảm ơn.</p>
+                                        <button class="btn btn-reverse sml"><i class="fa fa-check" aria-hidden="true"></i> Duyệt</button>
+                                        <button class="btn btn-reverse sml"><i class="fa fa-times" aria-hidden="true"></i> Hủy</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b class="cred">Trần Văn Nam (1 ngày trước)</b>
+                                        <p>Giá cả hợp lý vừa túi tiền, mua số lượng lớn còn được giảm 30% tôi rất hài lòng với Dịch
+                                            vụ bán thuốc chất lượng tồn kho ở đây.</p>
+                                        <button class="btn btn-reverse sml"><i class="fa fa-check" aria-hidden="true"></i> Duyệt</button>
+                                        <button class="btn btn-reverse sml"><i class="fa fa-times" aria-hidden="true"></i> Hủy</button>
+                                    </td>
+                                </tr>
+                                {% for i in range(4) %}
+                                <tr>
+                                    <td>
+                                        <b class="cred">Nguyễn Văn Hiếu (2 ngày trước)</b>
+                                        <p>Sản phẩm rất chất lượng, tôi uống phát được bonus thêm 2 bệnh khác.
+                                            Tôi rất vui và sẽ tiếp tục mua thuốc ở đây. Cảm ơn.</p>
+                                        <button class="btn btn-reverse sml"><i class="fa fa-check" aria-hidden="true"></i> Duyệt</button>
+                                        <button class="btn btn-reverse sml"><i class="fa fa-times" aria-hidden="true"></i> Hủy</button>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                <tr>
+                                    <td class="text-center">
+                                        1
+                                        <a href="">2</a>
+                                        <a href="">3</a>
+                                        <a href="">4</a>
+                                        <a href="">5</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+{% include 'footer.html' %}
+
+<!-- <a href="#" class="btn btn-success" data-action="open" data-side="right"><span>Open Right</span></a> -->
+<!-- <a href="#" class="btn btn-danger" data-action="close" data-side="right"><span>Close Right</span></a> -->
+
+
+</body>
+
+</html>

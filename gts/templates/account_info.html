@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/account_info.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+{% include 'header.html' %}
+
+<main>
+    <div class="container">
+        <ul class="cc-breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li>Thông tin tài khoản</li>
+        </ul>
+    </div>
+    <div class="em_account_info">
+        <div class="container">
+
+            <div class="account">
+                <h2>Thông tin tài khoản</h2>
+
+                <div class="user_info">
+                    <div class="img">
+                        <img src="/static/src/img/em/home/12.png"/>
+                    </div>
+                    <div class="text">
+                        <h3>Linh Trang <img src="/static/src/img/em/popup/vip.png"/></h3>
+                        <p>Gia nhập 15/12/2015 . Số điểm tích luỹ: <b>104</b></p>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="overflow-table">
+                        <table class="ad_table">
+                            <tr>
+                                <th>Ngày sinh</th>
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Tên Nhà Thuốc, Quầy thuốc, Phòng khám</th>
+                                <th>Địa chỉ mặc định</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>18/10/1993</td>
+                                <td>096 8841123</td>
+                                <td>tranglinh@gmail.com</td>
+                                <td>Nhà thuốc Linh Trang</td>
+                                <td>Tower 2, Times City, Hai Bà Trưng, Hà Nội</td>
+                                <td>
+                                    <a href="/thong-tin-tai-khoan/so-dia-chi" class="btn">Sổ địa chỉ</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18/10/1993</td>
+                                <td>096 8841123</td>
+                                <td>tranglinh@gmail.com</td>
+                                <td>Nhà thuốc Linh Đan</td>
+                                <td>Tower 8, Times City, Hai Bà Trưng, Hà Nội</td>
+                                <td>
+                                    <a href="/thong-tin-tai-khoan/so-dia-chi" class="btn">Sổ địa chỉ</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="text-right">
+                        <a class="btn-reverse btn_black" href="/thong-tin-tai-khoan/sua-thong-tin">Sửa thông tin tài khoản</a>
+                        <a class="btn-reverse btn_black" href="/thong-tin-tai-khoan/doi-mat-khau">Đổi mật khẩu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order">
+
+                <h2>Danh sách đơn hàng</h2>
+
+                <div class="overflow-table">
+                    <table class="ad_table">
+                        <tr>
+                            <th>Ngày đặt hàng</th>
+                            <th>Mã số đơn hàng</th>
+                            <th>Tình trạng</th>
+                            <th>Tổng điểm</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>13/06/2018</td>
+                            <td>#SO002312312</td>
+                            <td>Đã hủy</td>
+                            <td>Tổng tiền</td>
+                            <td>
+                                <a href="/lich-su-don-hang-chi-tiet#">Xem chi tiết</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13/06/2018</td>
+                            <td>#SO002312312</td>
+                            <td>Đã hoàn thành</td>
+                            <td>Tổng tiền</td>
+                            <td>
+                                <a href="/lich-su-don-hang-chi-tiet#">Xem chi tiết</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13/06/2018</td>
+                            <td>#SO002312312</td>
+                            <td>Đã hoàn thành</td>
+                            <td>Tổng tiền</td>
+                            <td>
+                                <a href="/lich-su-don-hang-chi-tiet#">Xem chi tiết</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% include 'footer.html' %}
+</body>
+
+</html>

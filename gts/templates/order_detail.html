@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/order_detail.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom JS -->
+    <script src="/static/src/js/header.js" type="text/javascript"></script>
+    <script src="/static/src/js/order_detail.js" type="text/javascript"></script>
+</head>
+
+<body>
+{% include 'header.html' %}
+
+<main>
+    <div class="container">
+        <ul class="cc-breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li>Đơn hàng</li>
+        </ul>
+    </div>
+    <form class="em_order_containner">
+        <div class="container">
+            <div class="em_row">
+                <div class="em_col_800">
+
+                    <div class="em_order_detail">
+                        <h2>Đơn hàng của bạn</h2>
+                        <div class="overflow_table">
+                            <table class="otable">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Đơn vị</th>
+                                    <th>Thành tiền</th>
+                                    <th></th>
+                                </tr>
+
+                                <!-- Order line -->
+                                <tr>
+                                    <td><strong>1</strong></td>
+                                    <td><span class="product_name">Thuốc ho Nam Dược</span></td>
+                                    <td><span>250.000đ</span></td>
+                                    <td>
+                                        <div class="amount">
+                                            <button><i aria-hidden="true" class="fa fa-minus"></i></button>
+                                            <input type="number"/>
+                                            <button><i aria-hidden="true" class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td><span>Hộp</span></td>
+                                    <td><strong>2.500.000đ</strong></td>
+                                    <td>
+                                        <button class="remove"><i aria-hidden="true" class="fa fa-times"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="note_line">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div class="note">
+                                            <span class="note_item">HSD: 5/10/2018</span>
+                                            <span class="note_item">Bán theo cọc 10 lọ</span>
+                                            <span class="note_item verify">Tặng 1 điểm tích luỹ</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Order line -->
+                                <tr>
+                                    <td><strong>2</strong></td>
+                                    <td><span class="product_name">Thuốc ho Nam Dược</span></td>
+                                    <td><span>250.000đ</span></td>
+                                    <td>
+                                        <div class="amount">
+                                            <button><i aria-hidden="true" class="fa fa-minus"></i></button>
+                                            <input type="number"/>
+                                            <button><i aria-hidden="true" class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td><span>Hộp</span></td>
+                                    <td><strong>2.500.000đ</strong></td>
+                                    <td>
+                                        <button class="remove"><i aria-hidden="true" class="fa fa-times"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="note_line">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div class="note">
+                                            <span class="note_item">HSD: 5/10/2018</span>
+                                            <span class="note_item">Bán theo cọc 10 lọ</span>
+                                            <span class="note_item verify">Tặng 1 điểm tích luỹ</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Order line -->
+                                <tr>
+                                    <td><strong>3</strong></td>
+                                    <td><span>Thuốc ho Nam Dược</span></td>
+                                    <td><span>250.000đ</span></td>
+                                    <td>
+                                        <div class="amount">
+                                            <button><i aria-hidden="true" class="fa fa-minus"></i></button>
+                                            <input type="number"/>
+                                            <button><i aria-hidden="true" class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td><span>Hộp</span></td>
+                                    <td><strong>2.500.000đ</strong></td>
+                                    <td>
+                                        <button class="remove"><i aria-hidden="true" class="fa fa-times"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="note_line hidden_note">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div class="note">
+                                            <span class="note_item">HSD: 5/10/2018</span>
+                                            <span class="note_item">Bán theo cọc 10 lọ</span>
+                                            <span class="note_item verify">Tặng 1 điểm tích luỹ</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Order line -->
+                                <tr>
+                                    <td><strong>4</strong></td>
+                                    <td><span>Thuốc ho Nam Dược</span></td>
+                                    <td><span>250.000đ</span></td>
+                                    <td>
+                                        <div class="amount">
+                                            <button><i aria-hidden="true" class="fa fa-minus"></i></button>
+                                            <input type="number"/>
+                                            <button><i aria-hidden="true" class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td><span>Hộp</span></td>
+                                    <td><strong>2.500.000đ</strong></td>
+                                    <td>
+                                        <button class="remove"><i aria-hidden="true" class="fa fa-times"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="note_line hidden_note">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div class="note">
+                                            <span class="note_item">HSD: 5/10/2018</span>
+                                            <span class="note_item">Bán theo cọc 10 lọ</span>
+                                            <span class="note_item verify">Tặng 1 điểm tích luỹ</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Order line -->
+                                <tr>
+                                    <td><strong>5</strong></td>
+                                    <td><span>Thuốc ho Nam Dược</span></td>
+                                    <td><span>250.000đ</span></td>
+                                    <td>
+                                        <div class="amount">
+                                            <button><i aria-hidden="true" class="fa fa-minus"></i></button>
+                                            <input type="number"/>
+                                            <button><i aria-hidden="true" class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td><span>Hộp</span></td>
+                                    <td><strong>2.500.000đ</strong></td>
+                                    <td>
+                                        <button class="remove"><i aria-hidden="true" class="fa fa-times"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="note_line hidden_note">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div class="note">
+                                            <span class="note_item">HSD: 5/10/2018</span>
+                                            <span class="note_item">Bán theo cọc 10 lọ</span>
+                                            <span class="note_item verify">Tặng 1 điểm tích luỹ</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="sum_price">
+                            <div class="row ">
+                                <div class="col-xs-6 ">
+                                    <b>Tổng tiền</b>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <strong> 1.370.000đ</strong></div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-xs-6">Tổng điểm tích luỹ</div>
+                                <div class="col-xs-6 text-right">+3 điểm</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="em_col_300">
+                    <div class="em_pay_detail">
+                        <div class="pay_block">
+                            <h3>Thông tin nhận hàng</h3>
+                            <hr/>
+                            <p class="name">
+                                <a class="edit_address" data-target="#address_modal" data-toggle="modal" href="#">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </a>
+                            </p>
+
+                            <div class="js_current_address">
+                                <p class="name">Nguyễn Minh Trang</p>
+                                <p class="phone">0945750998</p>
+                                <!-- <p>Nhà thuốc Minh Chính</p> -->
+                                <p>Park 7, Times City, 458 Minh Khai P. Vĩnh Tuy, Q. Hai Bà Trưng, Hà Nội</p>
+                            </div>
+                        </div>
+
+                        <div class="pay_block">
+                            <h3>Thông tin nhận hàng</h3>
+                            <hr/>
+                            <div class="payments_method">
+                                <div>
+                                    <input checked="checked" class="entrust" id="bank" name="payments_method" type="radio"
+                                           value="bank">
+                                    <label for="bank">Chuyển khoản ngân hàng</label>
+                                </div>
+                                <div>
+                                    <input class="entrust" id="cash" name="payments_method" type="radio" value="cash">
+                                    <label for="cash">Tiền mặt</label>
+                                </div>
+                            </div>
+                            <p class="msg">Lời nhắn (không bắt buộc)</p>
+                            <textarea
+                                    placeholder="Vui lòng nhập lời nhắn để chúng tôi có thể phục vụ bạn tốt hơn"></textarea>
+                            <div class="file_input">
+                                <input accept="image/*" class="hidden js_input_type_file" multiple="multiple"
+                                       type="file"/>
+                                <button class="choose_image js_choose_image">Chọn hình ảnh</button>
+                                <button class="upload js_upload">Upload</button>
+                            </div>
+                            <button class="btn btn_payment">xác nhận Đặt hàng</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade em_modal" id="address_modal"
+             role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button aria-label="Close" class="close js_confirm_address" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h2>thay đổi thông tin nhận hàng</h2>
+
+                        <div class="address_list">
+
+                            <!--address_item-->
+                            <div class="address_item">
+                                <div class="radio_cell">
+                                    <input checked="checked" class="entrust" id="shipping_address_1" name="shipping_address"
+                                           type="radio" value="1">
+                                    <label for="shipping_address_1"/></label>
+                                </div>
+                                <div class="address_name_cell">
+                                    <label for="shipping_address_1">
+                                        <p class="name">Nguyễn Minh Trang <span class="cgreen">Địa chỉ mặc định</span>
+                                        </p>
+                                        <p class="phone">0945750998</p>
+                                        <p>Park 7, Times City, 458 Minh Khai P. Vĩnh Tuy, Q. Hai Bà Trưng, Hà Nội</p>
+                                    </label>
+                                </div>
+                            </div><!--address_item-->
+
+                            <!--address_item-->
+                            <div class="address_item">
+                                <div class="radio_cell">
+                                    <input class="entrust" id="shipping_address_2" name="shipping_address" type="radio"
+                                           value="2">
+                                    <label for="shipping_address_2"/></label>
+                                </div>
+                                <div class="address_name_cell">
+                                    <label for="shipping_address_2">
+                                        <p class="name">Nguyễn Minh Chảo </p>
+                                        <p class="phone">0945750998</p>
+                                        <p>Số 06, ngách 56/46, Lê Văn Hiến, Đực Thộn, Hà Nội</p>
+                                    </label>
+                                </div>
+                            </div><!--address_item-->
+
+                        </div>
+
+                        <div class="btn_add_adress_wrap">
+                            <a data-dismiss="modal" data-target="#addMoreAddress_form"
+                               data-toggle="modal" href="#">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                Thêm địa chỉ
+                            </a>
+
+                            <div class="swap">
+                                <div class="col">
+                                    <button class="btn js_confirm_address" data-dismiss="modal">Đồng ý và tiếp tục
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+
+<div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade em_modal em_modal_reg" id="addMoreAddress_form"
+     role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                <img src="/static/src/img/em/order/shapeXXX.png"/>
+            </button>
+            <div class="modal-body">
+                <h2>THÊM ĐỊA CHỈ</h2>
+                <br/>
+
+                <form action="/web/login">
+                    <div class="row control">
+                        <div class="col-md-4">
+                            <label>Họ tên</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input name="username" placeholder="Nhập họ tên" type="text"/>
+                        </div>
+                    </div>
+                    <div class="row control">
+                        <div class="col-md-4">
+                            <label>Điện thoại*</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input name="phone" placeholder="Nhập điện thoại" type="text"/>
+                        </div>
+                    </div>
+                    <div class="row control">
+                        <div class="col-md-4">
+                            <label>Email *</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input name="password" placeholder="Nhập email" type="text"/>
+                        </div>
+                    </div>
+                    <div class="row control">
+                        <div class="col-md-4">
+                            <label>Tỉnh/Thành phố*</label>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="js_city_select" name="city">
+                                <optgroup label="Thành phố">
+                                    <option value="saab">TP. Hà Nội</option>
+                                    <option value="volvo">TP. Hồ Chí Minh</option>
+                                </optgroup>
+                                <optgroup label="Vịnh Bắc Bộ">
+                                    <option value="mercedes">Thái Bình</option>
+                                    <option value="audi">Phú Thọ</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row control">
+                        <div class="col-md-4">
+                            <label>Địa chỉ chi tiết*</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input name="address" placeholder="Nhập địa chỉ chi tiết" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row control">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8 em_double_btn">
+                            <label class="selectbox">Chọn làm địa chỉ mặc định
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row control">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8 em_double_btn">
+                            <button class="btn btn-reverse" data-dismiss="modal">huỷ bỏ</button>
+                            <button class="btn">cập nhật</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+
+<script type="text/javascript">
+$( document ).ready( function() {
+    var redirect_to = function(link) {window.location.href = link;};
+    $('.btn.btn_payment').on('click', function(e) {
+        e.preventDefault();
+        var is_bank_payment = $('#bank').is(":checked");
+        var is_cash_payment = $('#cash').is(":checked");
+        if (is_bank_payment) redirect_to('/dat-hang-thanh-cong-bank');
+        if (is_cash_payment) redirect_to('/dat-hang-thanh-cong-tien-mat');
+    });
+} );
+</script>
+
+</body>
+
+</html>

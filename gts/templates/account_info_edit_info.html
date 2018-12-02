@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/account_info.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+{% include 'header.html' %}
+
+<main>
+    <div class="container">
+        <ul class="cc-breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thông tin tài khoản</a></li>
+            <li>Sửa thông tin tài khoản</li>
+        </ul>
+    </div>
+    <div class="em_account_info">
+        <div class="container">
+
+            <div class="account em_address_book nomagrin-nopadding-sm">
+                <h2>Sửa Thông tin tài khoản</h2>
+
+
+                <div class="edit_form nopadding-nobackground">
+                    <form>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Họ tên*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="name" placeholder="vd: Nguyễn Văn A" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Ngày sinh</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="dateofbird" placeholder="vd: 31/12/1982" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Email*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="email" placeholder="vd: abc@gmail.com" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Điện thoại*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="phone" placeholder="vd: 0166 222 3333" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Tên Nhà thuốc</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="drugstore_name" placeholder="Nhập tên Nhà thuốc, Quầy thuốc, Phòng khám"
+                                       type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8">
+                                <div class="swap">
+                                    <div class="col">
+                                        <button aria-expanded="false"
+                                                class="btn btn-reverse" data-target="#id_duy_nhat1"
+                                                data-toggle="collapse" type="button">Hủy bỏ
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% include 'footer.html' %}
+</body>
+
+</html>

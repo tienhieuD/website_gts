@@ -1,0 +1,156 @@
+@import "global.less";
+
+#product_image_zoom {
+    object-fit: contain !important;
+    width: 280px;
+    height: 280px;
+    @media @mobile {
+        width: 100%;
+        margin-left: -16px;
+    }
+}
+.zoomLens {
+    display: none !important;
+}
+.zoomWindow {
+    border-color: #FFF !important;
+    border-width: 8px !important   ;
+    border-top: none !important;
+}
+
+.em_product_containner {
+    @media @mobile {
+        margin-top: 12px;
+    }
+    hr {
+        margin: 56px 0 36px;
+    }
+    .em_detail_of_product {
+        padding: 0px 20px;
+        @media @mobile {
+            padding: 0px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin: 0;
+            margin-bottom: 12px;
+            @media @mobile {
+                margin-top: 12px;
+                font-size: 18px;
+            }
+        }
+        .ptable {
+            td {
+                padding: 12px 0;
+                &:nth-child(1) {
+                    min-width: 100px;
+                }
+            }
+            .price { 
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 0.83;
+                color: #ed1818;
+            }
+            .btn_view_price {
+                color: #ed1818;
+                font-size: 24px;
+                font-weight: 700;
+                background-color: transparent;
+                border: none;
+                padding: 0;                
+            }
+            .amount {
+                font-size: 0;
+                width: 110px;
+                height: 36px;
+                border-radius: 4px;
+                background-color: #FFF;
+                display: inline-block;
+                border: solid 1px #dfe1e6;
+                overflow: hidden;
+                button, input {
+                    width: 33.333333%;
+                    font-size: 15px;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    color: #666;
+                    background-color: #fff;
+                    text-align: center;
+                    &::-webkit-inner-spin-button, 
+                    &::-webkit-outer-spin-button { 
+                        -webkit-appearance: none; 
+                        margin: 0; 
+                    }
+                    &:active {
+                        color: #666;
+                        background-color: rgba(153, 151, 153, 0.18);
+                    }
+                }
+            }
+            
+        }
+        .note {
+            // background-color: #FFF;
+            // border: solid 1px #ebecf0;
+            padding: 7px 0;
+            border-radius: 4px;
+            .note_item {
+                margin-right: 12px;
+                display: inline-block;
+            }
+            .verify {
+                background: transparent url(../img/em/home/checked.png) no-repeat center left;
+                background-size: contain;
+                padding-left: 24px;
+            }
+        }
+        .btn_add {
+            height: 54px;
+            margin-top: 20px;
+            font-size: 17px;
+            padding: 0 19px;
+        }
+    }
+    .em_detail_info {
+        .pdetail_table {
+            td {
+                vertical-align: top;
+                min-width: 150px;
+                padding: 16px 0;
+                &:nth-child(1) {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .em_rel_table {
+        .rel_product_table {
+            font-size: 13px;
+            td {
+                vertical-align: top;
+                padding-bottom: 12px;
+                &:nth-child(2) {
+                    padding-left: 12px;
+                }
+            }
+            .rel_img {
+                width: 72px;
+                height: 72px;
+                border-radius: 4px;
+                border: solid 1px #dfe1e6;
+            }
+            .cred {
+                display: block;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 1.54;
+                color: #ed1818;
+                margin: 4px;
+            }
+        }
+    }
+}

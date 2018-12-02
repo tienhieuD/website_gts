@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/contact.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+{% include 'header.html' %}
+<main>
+    <div class="contact" id="contact">
+        <div class="container">
+            <ul class="cc-breadcrumb">
+                <li>Trang chủ</li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="cc-main-contact">
+                <p>Giá Thuốc Sỉ cám ơn quý khách, quý đối tác đã quan tâm tới sản phẩm và dịch vụ của chúng tôi</p>
+                <p>Vui lòng cho chúng tôi biết sự quan tâm của quý khách</p>
+            </div>
+            <div class="cc-main-contact">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="cc-tablist active" class="active" role="presentation"><a aria-controls="home"
+                                                                                        data-toggle="tab" href="#customer"
+                                                                                        role="tab"><p>Khách hàng
+                        mong muốn <br/> nhập hàng trên Giá Thuốc Sỉ</p></a></li>
+                    <li class="cc-tablist" role="presentation"><a aria-controls="profile" data-toggle="tab" href="#partner"
+                                                                  role="tab">Đối tác muốn phân phối sản phẩm
+                        <br/> qua hệ thống của Giá Thuốc Sỉ</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="customer" role="tabpanel">
+                        <p>Để được tư vấn dịch vụ và hỗ trợ Đặt hàng, nhập hàng qua Giá Thuốc Sỉ, bạn có thể liên hệ với
+                            chúng tôi theo một trong những cách sau:</p>
+                        <br/>
+                        <br/>
+                        <p>Hotline Tư vấn dịch vụ & Hỗ trợ mua hàng: xxxxxxx</p>
+                        <p>Email: <span class="cc-textbold">Giathuocsi@gmail.com</span></p>
+                        <p>Fanpage:</p>
+                        <br/>
+                        <br/>
+                        <p>Hoặc gửi lời nhắn tới chúng tôi bằng cách điền vào biểu mẫu dưới đây:</p>
+                        <form action="" class="cc-form-contact" id="form-contact-2">
+                            <div class="form-contact">
+                                <span>Họ tên</span>
+                                <div class="input-contact">
+                                    <input name="name" placeholder="Nhập họ tên" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Số điện thoại*</span>
+                                <div class="input-contact">
+                                    <input name="phone" placeholder="Nhập số điện thoại" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Email*</span>
+                                <div class="input-contact">
+                                    <input name="email" placeholder="Nhập Email" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Chủ đề*</span>
+                                <div class="input-contact">
+                                    <input name="cd" placeholder="Nhập chủ đề" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Nội dung*</span>
+                                <div class="input-contact" height="132px">
+                                    <textarea name="description" placeholder="Nhập nội dung" type="text"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="cc-button-submit" type="submit">GỬI</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="partner" role="tabpanel">
+                        <p>Quý đối tác quan tâm tới kênh phân phối và muốn đưa sản phẩm của mình lên hệ thống của Giá
+                            Thuốc Sỉ vui lòng liên hệ với chúng tôi theo một trong những cách sau:</p>
+                        <br/>
+                        <p>Hotline Kinh doanh: <span class="cc-textbold">0243 95718484</span></p>
+                        <p>Email: <span class="cc-textbold">Giathuocsi@gmail.com</span></p>
+                        <br/>
+                        <p>Hoặc gửi lời nhắn tới chúng tôi bằng cách điền vào biểu mẫu dưới đây:</p>
+                        <form action="" class="cc-form-contact" id="form-contact-1">
+                            <div class="form-contact">
+                                <span>Tên Công ty*</span>
+                                <div class="input-contact">
+                                    <input name="name" placeholder="Nhập tên công ty" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Website Công ty*</span>
+                                <div class="input-contact">
+                                    <input name="website" placeholder="Nhập website" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Số điện thoại*</span>
+                                <div class="input-contact">
+                                    <input name="phone" placeholder="Nhập số điện thoại" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Email*</span>
+                                <div class="input-contact">
+                                    <input name="email" placeholder="Nhập Email" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Chủ đề*</span>
+                                <div class="input-contact">
+                                    <input name="cd" placeholder="Nhập chủ đề" type="text"/>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <span>Nội dung*</span>
+                                <div class="input-contact" height="132px">
+                                    <textarea name="description" placeholder="Nhập nội dung" type="text"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-align-center">
+                                <button class="cc-button-submit" type="submit">GỬI</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    {% include 'lib.html' %}
+    <link href="/static/src/css/my_style.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/font.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/src/css/account_info.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+{% include 'header.html' %}
+
+<main>
+    <div class="container">
+        <ul class="cc-breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thông tin tài khoản</a></li>
+            <li>Đổi mật khẩu</li>
+        </ul>
+    </div>
+    <div class="em_account_info">
+        <div class="container">
+
+            <div class="account em_address_book nomagrin-nopadding-sm">
+                <h2>Đổi mật khẩu</h2>
+
+
+                <div class="edit_form nopadding-nobackground">
+                    <form>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Mật khẩu cũ*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="old_pwd" type="password"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Mật khẩu mới*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="new_password" type="password"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Xác nhận mật khẩu*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="confirm_pwd" type="password"/>
+                            </div>
+                        </div>
+
+                        <div class="row control">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8">
+                                <div class="swap">
+                                    <div class="col">
+                                        <button aria-expanded="false"
+                                                class="btn btn-reverse" data-target="#id_duy_nhat1"
+                                                data-toggle="collapse" type="button">Hủy bỏ
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% include 'footer.html' %}
+</body>
+
+</html>

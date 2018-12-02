@@ -1,0 +1,379 @@
+<header>
+    <div class="em_overlay"></div>
+    <div class="em_header_sm">
+        <img class="logo" height="45" src="/static/src/img/em/logo.png" width="170"/>
+        <button class="notify js_open_sidebar"></button>
+        <!-- TODO: t-call this -->
+        <div class="notify">
+            <img src="https://dummyimage.com/22x22"/>
+            <span class="new"></span>
+        </div>
+    </div>
+    <div class="em_header">
+        <div class="main">
+            <div class="container">
+                <div class="logo">
+                    <img height="55" src="/static/src/img/em/logo.png" width="240"/>
+                </div>
+                <div class="service">
+                    <ul>
+                        <li>
+                            <img height="32" src="/static/src/img/em/home/3x/1.png" width="32"/>
+                            <div class="info">
+                                <p class="label">Tư vấn dịch vụ</p>
+                                <p class="phone">0246 6886 555</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img height="32" src="/static/src/img/em/home/3x/2.png" width="32"/>
+                            <div class="info">
+                                <p class="label">Liên hệ đặt hàng</p>
+                                <p class="phone">0246 6886 666</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img height="32" src="/static/src/img/em/home/3x/4.png" width="32"/>
+                            <div class="info">
+                                <p class="label">Báo lỗi dịch vụ</p>
+                                <p class="phone">0246 6886 777</p>
+                            </div>
+                        </li>
+
+                        {% if not request.args.get('g') %}
+                        <!-- LOGED -->
+                        <li class="notify">
+                            <div class="dropdown show notify">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="notify_dropdown">
+                                    <img height="22" src="/static/src/img/em/home/6.png" width="22"/>
+                                    <span class="new"></span>
+                                </a>
+                                <div aria-labelledby="notify_dropdown" class="dropdown-menu dropdown_notify">
+                                    <div class="notify_header">Bạn có 3 tin nhắn</div>
+                                    <a class="notify_item" href="#">Thông báo: Miễn phí vận chuyển cho khách hàng đặt
+                                        đơn từ 0-3h sáng ngày 20/3/2018</a>
+                                    <a class="notify_item" href="#">Thông báo: Miễn phí vận chuyển cho khách hàng đặt
+                                        đơn từ 0-3h sáng ngày 20/3/2018</a>
+                                    <a class="notify_item" href="#">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Aspernatur porro pariatur aliquam! Minus repudiandae, reiciendis odit,
+                                        recusandae expedita reprehenderit ratione nobis illo iusto praesentium, eos
+                                        natus iure ipsum impedit enim, nhớ mặt tao...</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown show user">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown">
+                                <img height="32" src="/static/src/img/em/home/3x/5.png" width="32"/>
+                                <span class="user_name">DonalTrump</span>
+                            </a>
+                            <div aria-labelledby="user_dropdown" class="dropdown-menu dropdown_menu">
+                                <a class="dropdown-item" href="/thong-tin-tai-khoan">Tài khoản</a>
+                                <a class="dropdown-item" href="/?g=1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        {% else %}
+                        <!-- LOGOUTED -->
+                        <li>
+                            <a class="no-decorate" href="#" data-toggle="modal" data-target="#login_form">
+                                <img src="/static/src/img/em/home/3x/3.png" width="32" height="32"/>
+                                <div class="info">
+                                    <p class="label">Tài khoản</p>
+                                    <p class="phone">Đăng ký / Đăng nhập</p>
+                                </div>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="container">
+                <ul>
+                    <li class="x_active"><a href="/trang-chu">Trang chủ</a></li>
+                    <li><a href="/lien-he">Đăng tin tức</a></li>
+                    <li class="em_drop">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="order">
+                            Quản lý Đơn hàng
+                        </a>
+                        <div aria-labelledby="order" class="dropdown-menu em_dropdown_menu" style="left:-10%">
+                            <a class="dropdown-item" href="/backend_quotation">Đơn hàng cần duyệt</a>
+                            <a class="dropdown-item" href="/backend_quotation">Tất cả đơn hàng</a>
+                        </div>
+                    </li>
+                    <li><a href="/backend_report">Thống kê</a></li>
+                    <li><a href="/backend_product">Quản lý Sản phẩm</a></li>
+                    <li><a href="/backend_user">Quản lý Tài khoản</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Form đăng nhập -->
+    <div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade em_modal" id="login_form"
+         role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <h2>Đăng nhập</h2>
+
+                    <form action="/trang-chu?logged=1">
+                        <p>
+                            Chào mừng bạn quay trở lại với Giá Thuốc Sỉ!<br/>
+                            Đăng nhập ngay để cập nhật những thông tin mới nhất bạn đã bỏ lỡ.
+                        </p>
+                        <div class="control invinput">
+                            <input name="username" placeholder="Tên đăng nhập" type="text"/>
+                        </div>
+
+                        <div class="group invinput">
+                            <input class="left_comp" name="password" placeholder="Nhập mật khẩu" type="password"/>
+                            <div class="right_comp">
+                                <a class="no-decorate" data-dismiss="modal"
+                                   data-target="#forgetPwd_form" data-toggle="modal" href="#"
+                                   title="Nhấn vào đây để khôi phục mật khẩu!">Quên mật khẩu</a>
+                            </div>
+                        </div>
+
+                        <p>
+                            Đừng quên tham gia cộng đồng Giá Thuốc Sỉ trên facebook tại <a href="#">đây</a> bạn nhé!
+                        </p>
+                        <input type="hidden" name="logged" value="1"/>
+                        <button class="btn">Đăng nhập</button>
+                    </form>
+
+                    <p class="note">
+                        Bạn chưa có tài khoản? <a class="js_open_reg_form" href="#">Đăng ký</a> ngay
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form đăng ký -->
+    <div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade em_modal em_modal_reg" id="reg_form"
+         role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+
+                    <form action="/dang-ky-thanh-cong">
+                        <p class="welcome">
+                            Chào mừng bạn đến với Giá Thuốc Sỉ, website số 1 về bán sỉ Dược phẩm. Để tham gia Cộng đồng
+                            Giá Thuốc Sỉ và sử dụng những tiện ích trên website, vui lòng đăng ký thông tin bằng cách
+                            điền vào biểu mẫu dưới đây
+                        </p>
+
+                        <h3>THÔNG TIN TÀI KHOẢN</h3>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Tên đăng nhập*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="username" placeholder="Nhập tên đăng nhập" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Điện thoại*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="phone" placeholder="Nhập số điện thoại" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Mật khẩu*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="password" placeholder="Nhập mật khẩu" type="password"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Nhập lại mật khẩu*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="repassword" placeholder="Nhập lại mật khẩu" type="password"/>
+                            </div>
+
+                        </div>
+
+                        <h3>THÔNG TIN Khách hàng</h3>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Tên khách hàng*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="name" placeholder="vd: Nguyễn Văn A" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Sinh nhật</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="dateofbird" placeholder="vd: 31/12/1982" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Hình thức kinh doanh</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input checked="checked" class="entrust" id="drugstore" name="business_format"
+                                               type="radio" value="1" value="1">
+                                        <label for="drugstore">Nhà thuốc</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="entrust" id="drugstores" name="business_format" type="radio"
+                                               value="2">
+                                        <label for="drugstores">Quầy thuốc</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="entrust" id="clinic" name="business_format" type="radio"
+                                               value="3">
+                                        <label for="clinic">Phòng khám</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="entrust" id="pharmaceutical_representatives" name="business_format" type="radio"
+                                               value="4">
+                                        <label for="pharmaceutical_representatives">Trình dược viên</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Tên Quầy*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="drugstore_name" placeholder="Nhập tên nhà thuốc, quầy thuốc, phòng..."
+                                       type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="email" placeholder="example@email.com" type="email"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Địa chỉ giao hàng*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input name="address" placeholder="Nhập địa chỉ giao hàng" type="text"/>
+                            </div>
+                        </div>
+                        <div class="row control">
+                            <div class="col-md-4">
+                                <label>Tỉnh/Thành phố*</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select class="js_city_select" name="city">
+                                    <optgroup label="Thành phố">
+                                        <option value="saab">TP. Hà Nội</option>
+                                        <option value="volvo">TP. Hồ Chí Minh</option>
+                                    </optgroup>
+                                    <optgroup label="Vịnh Bắc Bộ">
+                                        <option value="mercedes">Thái Bình</option>
+                                        <option value="audi">Phú Thọ</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="btn">Đăng ký</button>
+                    </form>
+
+                </div>
+            </div>
+     iv>
+  iv>
+    </div>
+
+    <!-- Form quên mật khẩu -->
+    <div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade em_modal em_modal_reg" id="forgetPwd_form"
+         role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <i aria-hidden="true" class="fa fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <h2>QUÊN MẬT KHẨU?</h2>
+
+                    <form action="/">
+                        <p class="welcome text-center">
+                            Vui lòng nhập tên đăng nhập hoặc địa chỉ email. Bạn sẽ nhận được một đường link tạo mật khẩu
+                            mới qua email.
+                        </p>
+                        <br/>
+
+
+                        <div class="row control">
+                            <div class="col-md-12">
+                                <label>Tên đăng nhập hoặc Email*</label>
+                            </div>
+                            <div class="col-md-12">
+                                <input class="pd125" name="username" type="text"/>
+                            </div>
+                        </div>
+
+                        <button class="btn">Đăng ký</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade em_modal em_modal_reg em_popup" id="modal_locked_account"
+         role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <img src="/static/src/img/em/order/shapeXXX.png"/>
+                </button>
+                <div class="modal-body">
+                    <img class="iconner" src="/static/src/img/em/popup/icons8-lock.png"/>
+                    <!-- <img class="iconner bluebg" src="/static/src/img/em/popup/Shape.png"/> -->
+                    <h2>TÀI KHOẢN CỦA BẠN ĐÃ BỊ KHÓA</h2>
+                    <br/>
+                    <p>
+                        Hôm nay thị trường có xxx sản phẩm thay đổi giá, trong đó: 123 tăng, 456 giảm.
+                    </p>
+
+                    <div class="single_btn">
+                        <button class="btn" data-dismiss="modal" type="button">Đồng ý</button>
+                    </div>
+                    <div class="double_btn">
+                        <button class="btn btn-reverse" data-dismiss="modal" type="button">bỏ qua</button>
+                        <a href="tel:555-555-5555">
+                            <button class="btn" data-dismiss="modal" type="button">Gọi hỗ trợ</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>$('#modal_locked_account').modal('show')</script> -->
+
+
+</header>
