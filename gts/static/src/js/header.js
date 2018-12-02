@@ -22,6 +22,6 @@ $(document).ready(function() {
     });
 
     // Khởi tạo select2 địa chỉ
-    $('.js_city_select').select2();
+//    $('.js_city_select').select2();
     
 });
